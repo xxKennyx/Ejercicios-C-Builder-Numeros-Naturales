@@ -1,0 +1,26 @@
+UNatural.h :
+
+int EliminarDigImpares();
+
+UNatural.cpp :
+
+int CNatural::EliminarDigImpares(){
+	int dig=0;
+	int mul=1;
+	int x;
+
+	while(n>0){
+		x=n%10;
+		if(x%2==0){
+			dig=x*mul+dig;
+			mul=mul*10;
+		}
+		n=n/10;
+	}
+
+    return dig;
+}
+
+UPrincipal.cpp :
+
+EResultado->Text=n->EliminarDigImpares(); 
