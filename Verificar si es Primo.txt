@@ -1,0 +1,36 @@
+UNatural.h :
+
+bool EsPrimo(int n);
+
+UNatural.cpp :
+
+bool Natural::EsPrimo(int n){
+	int dig=0;
+	int x=1;
+	while (n>=x){
+		if (n%x==0) {
+			dig++;
+
+		}
+
+		x++;
+	}
+
+	if (dig==2) {
+		return true;
+	}
+
+	else{
+		return false;
+	}
+}
+
+UPrincipal.cpp :
+
+if (n->EsPrimo(StrToInt(ENumero->Text))) {
+	EResultado->Text="Es Primo";
+}
+
+else{
+	EResultado->Text="No es Primo";
+}
