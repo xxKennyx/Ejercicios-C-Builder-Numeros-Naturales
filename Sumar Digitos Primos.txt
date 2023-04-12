@@ -1,0 +1,22 @@
+UNatural.h :
+
+int SumarDigPrimos();
+
+UNatural.cpp :
+
+int CNatural::SumarDigPrimos(){
+	int dig=0;
+	int x;
+	while(n>0){
+		x=n%10;
+		if(EsPrimo(x)){
+			dig=dig+x;
+		}
+		n=n/10;
+	}
+    return dig;
+}
+
+UPrincipal.cpp :
+
+EResultado->Text=n->SumarDigPrimo(); 
