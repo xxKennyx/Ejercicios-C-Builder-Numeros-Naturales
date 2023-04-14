@@ -4,7 +4,7 @@ bool EsPrimo(int n);
 
 UNatural.cpp :
 
-bool CNatural::EsPrimo(int n){
+bool Natural::EsPrimo(int n){
 	int dig=0;
 	int x=1;
 	while (n>=x){
