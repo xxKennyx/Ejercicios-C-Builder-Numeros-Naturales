@@ -1,0 +1,25 @@
+UNatural.h :
+
+int DigitoMayor();
+
+UNatural.cpp :
+
+int CNatural::DigitoMayor() {
+    int mayor = 0;
+    int x;
+
+    while (n > 0) {
+        x = n % 10;
+        if (x > mayor) {
+            mayor = x;
+        }
+        n /= 10;
+    }
+
+    return mayor;
+}
+
+
+UPrincipal.cpp :
+
+EResultado->Text=n->DigitoMayor(); 
