@@ -1,0 +1,26 @@
+UNatura.h:
+
+bool VerificarN(int digito);
+
+UNatural.cpp:
+
+bool CNatural::VerificarN(int digito){
+	while(n>0){
+		int x=n%10;
+		if(x==digito){
+			return true;
+		}
+		n=n/10;
+	}
+    return false;
+}
+
+UPrincipal.cpp:
+
+n->SetN(StrToInt(ENumero->Text));
+	if(n->VerificarN(StrToInt(EDigito->Text))){
+		EResultado->Text="True";
+	}
+	else{
+		EResultado->Text="False";
+	}
